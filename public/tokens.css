@@ -1,0 +1,47 @@
+:root {
+  /* Fonts */
+  --tokens-font-body: "Lato", Arial, sans-serif;
+  --tokens-font-heading: "Playfair Display", Georgia, serif;
+
+  /* Spacing + radius */
+  --tokens-space-1: 0.5rem;
+  --tokens-space-2: 1rem;
+  --tokens-space-3: 1.5rem;
+  --tokens-radius: 0.625rem;
+
+  /* Palette */
+  --tokens-color-gray-0:   #ffffff;
+  --tokens-color-gray-200: #f6f7f8;
+  --tokens-color-gray-400: #d6dbe1;
+  --tokens-color-gray-600: #5f6770;
+  --tokens-color-gray-800: #101214;
+
+  --tokens-color-blue-500: #2d5bd1;
+
+  /* Semantic colors */
+  --tokens-color-text-primary:   var(--tokens-color-gray-800);
+  --tokens-color-text-secondary: var(--tokens-color-gray-600);
+
+  --tokens-color-surface-page:   var(--tokens-color-gray-200);
+  --tokens-color-surface:        var(--tokens-color-gray-0);
+
+  --tokens-color-border:         var(--tokens-color-gray-400);
+  --tokens-color-link:           var(--tokens-color-blue-500);
+
+  --tokens-color-surface-hover:         #eef1f4;
+  --tokens-color-surface-accent-active: #e6edff;
+}
+
+body.dark-mode {
+  --tokens-color-text-primary: #f6f7f8;
+  --tokens-color-text-secondary: #d6dbe1;
+
+  --tokens-color-surface-page: #0b0e11;
+  --tokens-color-surface: #101214;
+
+  --tokens-color-border: #2a3139;
+  --tokens-color-link: #ffa576;
+
+  --tokens-color-surface-hover: #1a2027;
+  --tokens-color-surface-accent-active: #2a3140;
+}

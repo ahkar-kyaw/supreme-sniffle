@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Ahkar Kyaw</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- CSS -->
+  <link href="tokens.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <!-- JS -->
+  <script type="module" src="header.mjs"></script>
+  <script type="module" src="toHtmlElement.mjs"></script>
+</head>
+<body class="site">
+  <header id="header-root">
+  </header>
+  <main class="site-main">
+    <div class="container">
+      <section class="panel">
+        <h2>My Projects</h2>
+        <p>A selection of engineering and creative builds.</p>
+      </section>
+      <div class="projects-grid">
+        <section class="panel">
+          <h3>Self balancing robot (Nemesis)</h3>
+          <img class="project-photo" src="Nemesis.jpg" alt="Nemesis self-balancing robot prototype" />
+          <p>
+            A <strong>self-balancing two-wheeled robot</strong> that uses gyroscopic sensors
+            and PID control algorithms to maintain equilibrium while moving.
+          </p>
+          <ul class="basic-list">
+            <li>CAD modeling with SolidWorks</li>
+            <li>ESP32 Microcontroller</li>
+            <li>C++ and FreeRTOS for control algorithms</li>
+            <li>PCB design in KiCad</li>
+          </ul>
+        </section>
+        <section class="panel">
+          <h3>String Art Machine (DaVinci)</h3>
+          <img class="project-photo" src="DaVinci.jpg" alt="DaVinci string art machine" />
+          <p>
+            An <em>automated string art machine</em> that plots images using string and nails,
+            combining mechanical precision with artistic output.
+          </p>
+          <ul class="basic-list">
+            <li>CAD modeling with Fusion 360</li>
+            <li>STM32 Microcontroller</li>
+            <li>MicroPython programming</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

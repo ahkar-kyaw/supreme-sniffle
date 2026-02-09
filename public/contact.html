@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Ahkar Kyaw</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- CSS -->
+  <link href="tokens.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <!-- JS -->
+  <script type="module" src="header.mjs"></script>
+  <script type="module" src="contactForm.mjs"></script>
+  <script type="module" src="toHtmlElement.mjs"></script>
+</head>
+<body class="site">
+  <header id="header-root">
+  </header>
+  <main class="site-main">
+    <div class="container">
+      <section class="panel">
+        <form id="contact-form" novalidate>
+          <div>
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" autocomplete="email" required />
+          </div>
+          <fieldset id="topics-fieldset">
+            <legend>What best describes yourself?</legend>
+            <div>
+              <input type="checkbox" id="topic1" name="topics" value="employer" />
+              <label for="topic1">Employer</label>
+            </div>
+            <div>
+              <input type="checkbox" id="topic2" name="topics" value="peer" />
+              <label for="topic2">Peer</label>
+            </div>
+            <div>
+              <input type="checkbox" id="topic3" name="topics" value="other" />
+              <label for="topic3">Other</label>
+            </div>
+          </fieldset>
+          <div>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="7" cols="30">
+            </textarea><br>
+          </div>
+          <input type="submit" value="My submit button text" />
+        </form>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
